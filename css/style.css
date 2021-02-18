@@ -468,7 +468,7 @@ span .icons__link{
 
 .works__item:hover .works__item-hover{
 	opacity: 1;
-	transition: all 1s ease 0.3s;
+	transition: all 0.5s ease 0.1s;
 }
 
 .works__item-hover{
