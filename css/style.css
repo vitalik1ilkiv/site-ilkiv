@@ -517,6 +517,7 @@ span .icons__link{
 	background-image: url('../img/paralax.png');
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	background-size: cover;
 	width: 100%;
 	height: 100%;
 	max-height: 370px;
