@@ -1,7 +1,9 @@
 $(document).ready(function() {
+	let slidesToShow = 4;
+	let slidesToScroll = 2;
+	$(document).width() < 768 ? (slidesToShow = 3,  slidesToScroll = 1): (slidesToShow = 4,  slidesToScroll = 2);
 	let position = 0;
-	const slidesToShow = 4;
-	const slidesToScroll = 2;
+	
 	const container = $('.slider-container');
 	const track = $('.slider-track');
 	const item = $('.slider-item');
@@ -49,6 +51,11 @@ $(document).ready(function() {
 	};
 
 	checkBtns();
+
+	$('.header__burger').click(function(event){
+		$('.header__burger, .nav__menu').toggleClass('active');
+
+	});
 });
 
 
