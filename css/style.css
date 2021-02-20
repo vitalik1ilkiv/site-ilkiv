@@ -135,9 +135,9 @@ body{
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: ##A52A2A;
 		padding: 100px 0 0 20px;
 		transition: all 0.5s ease 0s;
+		background-color: #A52A2A;
 	}
 
 	.nav__menu.active{
@@ -382,6 +382,7 @@ body{
 		display: none;
 
 	}
+
 }
 
 .about{
@@ -443,6 +444,7 @@ body{
 	height: 250px;
 	margin-bottom: 20px;
 	position: relative;
+
 }
 
 .slider-item__image:hover::after{
@@ -461,10 +463,12 @@ body{
 	opacity: 1;
 }
 
+
+
 .slider-item__image-icons{
 	position: absolute;
 	top: 190px;
-	left: 75px;
+	left: 65px;
 	opacity: 0;
 	z-index: 5;
 }
@@ -669,6 +673,12 @@ span .icons__link{
 	}
 }
 
+@media(max-width: 425px){
+	.paralax__content{
+		min-width: 320px;
+	}
+}
+
 .paralax{
 	background-image: url('../img/paralax.png');
 	background-attachment: fixed;
@@ -757,10 +767,11 @@ span .icons__link{
 
 	.blog-row__image{
 		margin-bottom: 30px;
+		max-width: 320px;
 	}
 
 	.blog-row__content {
-		max-width: 460px;
+		max-width: 320px;
 	}
 }
 
@@ -975,6 +986,16 @@ span .icons__link{
 	left: 0;
 }
 */
+
+@media(max-width: 425px){
+	.touch__email{
+		display: none;
+	}
+
+	.touch__comunication{
+		justify-content: center;
+	}
+}
 
 .touch__address-titel{
 	text-transform: uppercase;
